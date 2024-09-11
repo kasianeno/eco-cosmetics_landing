@@ -1,0 +1,45 @@
+.nav {
+  &__list {
+    // margin: 0;
+    padding: 0;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 14px;
+
+    @include menuInlinePadding;
+
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    transition: transform .3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $page-main-color;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 10px;
+      height: 1px;
+      width: 100%;
+
+      background-color: $gray-color;
+
+    }
+  }
+}

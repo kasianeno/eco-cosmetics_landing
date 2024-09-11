@@ -1,0 +1,107 @@
+.top-bar {
+  padding-top: 15px;
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      @include pageGrid;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 24px;
+
+    @include hiddenImgDesktop;
+
+
+
+
+  }
+
+  &__icon {
+    display: flex;
+
+    @include hiddenImgDesktop;
+
+    &--menu {
+      @include onDesktop {
+        @include hiddenImgDesktop;
+      }
+    }
+
+    &--logo {
+      @include hiddenImgDesktop;
+    }
+
+    &--shop {
+      display: flex;
+      justify-content: end;
+
+      transition: transform $transition-duration;
+
+      @include onDesktop {
+        display: initial !important;
+        grid-column-end: 13;
+
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    grid-column: 7/9;
+    gap: 40px;
+
+    @include hiddenImg;
+
+  }
+
+  &__item {
+    list-style: none;
+    transition: transform .3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $additional-color;
+
+    transition: transform .3s ease;
+
+  }
+
+  &__logoDesktop {
+    @include hiddenImg;
+
+    @include onDesktop {
+        grid-column: 1/3;
+      }
+  }
+
+  &__iconDesktop {
+    @include hiddenImg;
+
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+
+
+  }
+}

@@ -1,0 +1,26 @@
+.menu {
+  height: 100vh;
+  background-color: $additional-color;
+  overflow: auto;
+
+  @include hiddenImgDesktop;
+
+  &__top {
+    position: sticky;
+    margin-bottom: 41px;
+    top: 0;
+    z-index: 1;
+    padding-top: 15px;
+
+    &--icon {
+      height: 15px;
+      width: 15px;
+      color: $page-main-color;
+      margin-inline-start: 20px;
+
+      @include onTablet {
+        margin-left: 27px;
+      }
+    }
+  }
+}
