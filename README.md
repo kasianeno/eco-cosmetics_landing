@@ -11,7 +11,7 @@ Key sections of the landing page typically include a hero area with a strong hea
 
 Overall, this project showcases the ability to create a polished, responsive landing page while leveraging the power of SASS for better code management.
 
-<h2>In this project, i used the following technologies:</h2>
+<h2>In this project, I used the following technologies:</h2>
 <ol>
   <li>HTML5: For structuring the content of the landing page, including headings, sections, buttons, and links.</li>
   <li>CSS3: To style and layout the page, ensuring a visually appealing design with colors, fonts, and responsive behavior.</li>
