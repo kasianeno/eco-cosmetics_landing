@@ -23,3 +23,8 @@ Overall, this project showcases the ability to create a polished, responsive lan
 
 <h2>How to run project locally:</h2>
 <ol>
+  <li>Clone repository using Git</li>
+  <li>Open your terminal</li>
+  <li>Install the standard package manager for Node.js using <b>npm i</b></li>
+  <li>Type <b>npm start</b> to run project locally.</li>
+</ol>
